@@ -1,0 +1,17 @@
+{
+  "name": "my_selenide_pom_project",
+  "repo_name": "{{ cookiecutter.name | lower | replace(' ', '_') }}",
+  "package_name": "com.github.qky666.{{ cookiecutter.repo_name | replace('-', '') | replace('_', '') }}",
+  "group": "{{ cookiecutter.package_name }}",
+  "version": "0.0.1-SNAPSHOT",
+  "selenide_pom_version": "0.18.5",
+  "selenide_version": "6.15.0",
+  "use_appium": "yes",
+  "_copy_without_render": [
+    "gradle/wrapper/gradle-wrapper.jar",
+    "gradle/wrapper/gradle-wrapper.properties",
+    "gradlew",
+    "gradlew.bat",
+    ".gitignore"
+  ]
+}
