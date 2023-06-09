@@ -34,20 +34,28 @@ open class MainFramePage : Page(), Logging {
     }
 
     private fun acceptCookiesDesktop() {
-        do {
+        for (retries in 1..4) {
             desktopMenu.searchOpen.click()
             desktopMenu.langEs.click(ClickOptions.withOffset(0, -50))
-        } while (!cookiesBanner.hasLoadedRequired())
-        cookiesBanner.acceptCookies()
+            if (cookiesBanner.hasLoadedRequired())  {
+                cookiesBanner.acceptCookies()
+                break
+            }
+            Thread.sleep(100)
+        }
         shouldLoadRequired()
     }
 
     private fun acceptCookiesMobile() {
         shouldLoadRequired()
-        do {
+        for (retries in 1..4) {
             mobileMenu.mobileMenuButton.click()
-        } while (!cookiesBanner.hasLoadedRequired())
-        cookiesBanner.acceptCookies()
+            if (cookiesBanner.hasLoadedRequired())  {
+                cookiesBanner.acceptCookies()
+                break
+            }
+            Thread.sleep(100)
+        }
         shouldLoadRequired()
     }
 
