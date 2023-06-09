@@ -1,7 +1,7 @@
 import ru.vyarus.gradle.plugin.python.task.PythonTask
 
-group={{ cookiecutter.group }}
-version={{ cookiecutter.version }}
+group = "{{ cookiecutter.group }}"
+version = "{{ cookiecutter.version }}"
 
 repositories {
     mavenCentral()
@@ -14,7 +14,7 @@ plugins {
     id("com.github.ben-manes.versions") version "0.46.0"
     id("io.qameta.allure") version "2.11.2"
     id("org.gradle.test-retry") version "1.5.3"
-    id("org.jlleitschuh.gradle.ktlint") version "11.3.2"
+    id("org.jlleitschuh.gradle.ktlint") version "11.4.0"
     id("ru.vyarus.use-python") version "3.0.0"
 }
 
