@@ -1,5 +1,8 @@
 import ru.vyarus.gradle.plugin.python.task.PythonTask
 
+group={{ cookiecutter.group }}
+version={{ cookiecutter.version }}
+
 repositories {
     mavenCentral()
     maven("https://jitpack.io")
