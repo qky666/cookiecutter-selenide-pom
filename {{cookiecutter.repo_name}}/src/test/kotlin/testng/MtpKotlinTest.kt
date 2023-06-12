@@ -1,4 +1,4 @@
-package testng
+package {{ cookiecutter.group }}.testng
 
 import com.codeborne.selenide.CollectionCondition.size
 import com.codeborne.selenide.Condition.disappear
@@ -15,11 +15,11 @@ import org.testng.annotations.AfterMethod
 import org.testng.annotations.BeforeMethod
 import org.testng.annotations.Parameters
 import org.testng.annotations.Test
-import pom.pages.home.homePage
-import pom.pages.services.qualityAssurancePage
-import pom.pages.services.servicesPage
-import pom.searchresults.searchResultsPage
-import util.ReportHelper
+import {{ cookiecutter.group }}.pom.pages.home.homePage
+import {{ cookiecutter.group }}.pom.pages.services.qualityAssurancePage
+import {{ cookiecutter.group }}.pom.pages.services.servicesPage
+import {{ cookiecutter.group }}.pom.searchresults.searchResultsPage
+import {{ cookiecutter.group }}.util.ReportHelper
 
 open class MtpKotlinTest : Logging {
 

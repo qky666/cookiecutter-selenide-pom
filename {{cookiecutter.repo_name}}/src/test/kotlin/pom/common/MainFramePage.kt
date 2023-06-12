@@ -1,4 +1,4 @@
-package pom.common
+package {{ cookiecutter.group }}.pom.common
 
 import com.codeborne.selenide.ClickOptions
 import com.github.qky666.selenidepom.config.SPConfig

@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package cucumber.steps
+package {{ cookiecutter.group }}.cucumber.steps
 
 import com.codeborne.selenide.CollectionCondition.size
 import com.codeborne.selenide.Condition.disappear
@@ -12,11 +12,11 @@ import com.github.qky666.selenidepom.pom.shouldLoadRequired
 import io.cucumber.java8.Es
 import org.apache.logging.log4j.kotlin.Logging
 import org.testng.Assert
-import pom.common.mainFramePage
-import pom.pages.home.homePage
-import pom.pages.services.qualityAssurancePage
-import pom.pages.services.servicesPage
-import pom.searchresults.searchResultsPage
+import {{ cookiecutter.group }}.pom.common.mainFramePage
+import {{ cookiecutter.group }}.pom.pages.home.homePage
+import {{ cookiecutter.group }}.pom.pages.services.qualityAssurancePage
+import {{ cookiecutter.group }}.pom.pages.services.servicesPage
+import {{ cookiecutter.group }}.pom.searchresults.searchResultsPage
 
 class MtpStepsDefinition : Es, Logging {
 

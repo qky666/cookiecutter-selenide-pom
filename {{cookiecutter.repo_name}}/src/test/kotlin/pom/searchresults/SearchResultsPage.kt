@@ -1,4 +1,4 @@
-package pom.searchresults
+package {{ cookiecutter.group }}.pom.searchresults
 
 import com.codeborne.selenide.Condition.text
 import com.codeborne.selenide.SelenideElement
@@ -6,8 +6,8 @@ import com.github.qky666.selenidepom.pom.LangConditionedElement
 import com.github.qky666.selenidepom.pom.Required
 import com.github.qky666.selenidepom.pom.Widget
 import com.github.qky666.selenidepom.pom.WidgetsCollection
-import pom.common.BreadCrumbWidget
-import pom.common.MainFramePage
+import {{ cookiecutter.group }}.pom.common.BreadCrumbWidget
+import {{ cookiecutter.group }}.pom.common.MainFramePage
 import java.time.Duration
 
 class SearchResultsPage : MainFramePage() {

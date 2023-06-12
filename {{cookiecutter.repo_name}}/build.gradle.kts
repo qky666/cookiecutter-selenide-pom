@@ -21,12 +21,12 @@ plugins {
 dependencies {
     val log4jVersion = "2.20.0"
 
-    testImplementation("com.github.qky666:selenide-pom:{{ cookiecutter.selenide_pom_version }}")
+    testImplementation("com.github.qky666:selenide-pom:{{ cookiecutter._selenide_pom_version }}")
     {%- print("\n    ") -%}
     {%- if cookiecutter.use_appium == "yes" -%}
-    testImplementation("com.codeborne:selenide-appium:{{ cookiecutter.selenide_version }}")
+    testImplementation("com.codeborne:selenide-appium:{{ cookiecutter._selenide_version }}")
     {%- else -%}
-    testImplementation("com.codeborne:selenide:{{ cookiecutter.selenide_version }}")
+    testImplementation("com.codeborne:selenide:{{ cookiecutter._selenide_version }}")
     {% endif %}
     testImplementation("org.testng:testng:7.8.0")
     testImplementation("org.apache.logging.log4j:log4j-core:$log4jVersion")

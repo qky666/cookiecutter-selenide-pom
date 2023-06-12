@@ -1,4 +1,4 @@
-package cucumber.listener
+package {{ cookiecutter.group }}.cucumber.listener
 
 import io.cucumber.plugin.ConcurrentEventListener
 import io.cucumber.plugin.event.EventHandler
@@ -7,7 +7,7 @@ import io.cucumber.plugin.event.PickleStepTestStep
 import io.cucumber.plugin.event.TestStepFinished
 import io.qameta.allure.Allure
 import io.qameta.allure.AllureLifecycle
-import util.ReportHelper
+import {{ cookiecutter.group }}.util.ReportHelper
 
 @Suppress("unused")
 class CucumberListener @JvmOverloads constructor(private val lifecycle: AllureLifecycle = Allure.getLifecycle()) :

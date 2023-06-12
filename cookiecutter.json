@@ -1,12 +1,11 @@
 {
   "_new_lines": "\n",
+  "_selenide_pom_version": "0.18.7",
+  "_selenide_version": "6.15.0",
   "name": "my_selenide_pom_project",
   "repo_name": "{{ cookiecutter.name | lower | replace(' ', '_') }}",
-  "package_name": "my.group.{{ cookiecutter.repo_name | replace('-', '') | replace('_', '') }}",
-  "group": "{{ cookiecutter.package_name }}",
+  "group": "my.group.{{ cookiecutter.repo_name | replace('-', '') | replace('_', '') }}",
   "version": "0.0.1-SNAPSHOT",
-  "selenide_pom_version": "0.18.7",
-  "selenide_version": "6.15.0",
   "use_appium": ["yes", "no"],
   "use_cucumber": ["no", "yes"],
   "_copy_without_render": [
@@ -15,7 +14,6 @@
     "gradlew",
     "gradlew.bat",
     "gradle.properties",
-    ".gitignore",
-    "src/test/kotlin/*"
+    ".gitignore"
   ]
 }

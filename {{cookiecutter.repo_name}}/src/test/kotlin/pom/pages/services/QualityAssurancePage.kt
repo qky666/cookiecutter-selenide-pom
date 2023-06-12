@@ -1,4 +1,4 @@
-package pom.pages.services
+package {{ cookiecutter.group }}.pom.pages.services
 
 import com.github.qky666.selenidepom.pom.LangConditionedElement
 import com.github.qky666.selenidepom.pom.Required

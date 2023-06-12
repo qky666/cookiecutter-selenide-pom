@@ -1,4 +1,4 @@
-package pom.common
+package {{ cookiecutter.group }}.pom.common
 
 import com.codeborne.selenide.Condition.disappear
 import com.codeborne.selenide.Condition.text

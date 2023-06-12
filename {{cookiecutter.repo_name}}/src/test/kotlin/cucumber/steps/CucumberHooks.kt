@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package cucumber.steps
+package {{ cookiecutter.group }}.cucumber.steps
 
 import com.codeborne.selenide.Selenide
 import com.github.qky666.selenidepom.config.SPConfig

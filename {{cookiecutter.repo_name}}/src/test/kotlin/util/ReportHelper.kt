@@ -1,4 +1,4 @@
-package util
+package {{ cookiecutter.group }}.util
 
 import com.codeborne.selenide.Selenide
 import io.qameta.allure.Allure
